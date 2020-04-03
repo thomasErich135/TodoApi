@@ -14,9 +14,7 @@ namespace Todo.Application.Configurations
         public static IServiceCollection AddDatabaseSetup(this IServiceCollection services, IConfiguration configuration)
         {
             //Add Mysql connection
-            string teste = configuration.GetConnectionString("DefaultConnection");
-
-            services.AddDbContext<TodoContext>(options =>
+            services.AddDbContext<MysqlContext>(options =>
                 options.UseMySql(configuration.GetConnectionString("DefaultConnection")));
 
             return services;

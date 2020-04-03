@@ -1,14 +1,14 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Todo.Domain.Commands;
 
 namespace Todo.Tests.CommandTests
 {
-    [TestClass]
-    public class CreateTodoCommandTests
+     [TestClass]
+    public class MarkTodoAsDoneCommandTests
     {
-        private readonly CreateTodoCommand _invalidCommand = new CreateTodoCommand("", "", DateTime.Now);
-        private readonly CreateTodoCommand _validCommand = new CreateTodoCommand("Titulo da tarefa", "Usuário da tarefa", DateTime.Now);
+        private readonly MarkTodoAsDoneCommand _invalidCommand = new MarkTodoAsDoneCommand(Guid.Empty,"");
+        private readonly MarkTodoAsDoneCommand _validCommand = new MarkTodoAsDoneCommand(Guid.NewGuid(),"Usuário Fake");
 
         [TestMethod]
         public void CommandInvalid()
@@ -23,5 +23,5 @@ namespace Todo.Tests.CommandTests
             _validCommand.Validate();
             Assert.AreEqual(_validCommand.Valid, true);
         }
-    }
+    }   
 }

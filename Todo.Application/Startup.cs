@@ -23,6 +23,9 @@ namespace Todo.Application
             //Database Setup
             services.AddDatabaseSetup(Configuration);
 
+            //Dependency Injection
+            services.AddDependencyInjectionSetup();
+
             //Swagger Setup
             services.AddSwaggerSetup();
 

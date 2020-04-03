@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using Todo.Domain.Entities;
 using Todo.Domain.Repositories;
 
 namespace Todo.Tests.Repositories
 {
-    public class FakeTodoRepository : ITodoRepository
+    public class FakeTodoRepository : FakeRepository<TodoItem>, ITodoRepository
     {
         public void CreateTodo(TodoItem item)
         {
@@ -14,7 +15,7 @@ namespace Todo.Tests.Repositories
 
         public TodoItem GetById(Guid id, string user)
         {
-            return new TodoItem("Titulo da tarefa", DateTime.Now, "Usuário de Teste");
+            return new TodoItem("Titulo Fake",DateTime.Now,"Usuário Fake");
         }
 
         public void UpdateTodo(TodoItem item)
