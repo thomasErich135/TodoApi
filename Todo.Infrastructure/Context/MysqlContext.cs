@@ -9,7 +9,7 @@ namespace Todo.Infrastructure.Context
 {
     public class MysqlContext : DbContext
     {
-        public MysqlContext(DbContextOptions options) : base(options) { }
+        public MysqlContext(DbContextOptions<MysqlContext> options) : base(options) { }
         
         public DbSet<TodoItem> TodoItems { get; set; }
         

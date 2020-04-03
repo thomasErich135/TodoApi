@@ -31,7 +31,7 @@ namespace Todo.Infrastructure.Mappings
 
             builder.HasKey(p => p.Id);
 
-            builder.ToTable("TodosItems");
+            builder.ToTable("TodoItems");
         }
     }
 }
