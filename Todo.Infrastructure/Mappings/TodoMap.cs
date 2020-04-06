@@ -10,24 +10,27 @@ namespace Todo.Infrastructure.Mappings
         public void Configure(EntityTypeBuilder<TodoItem> builder)
         {
            builder.Property(p => p.Id)
-                    .HasColumnName("IdTodo")
-                    .IsRequired();
+                .HasColumnName("IdTodo")
+                .IsRequired();
             
             builder.Property(p => p.Title)
-                    .IsRequired()
-                    .HasColumnType("VARCHAR(20)");
+                .IsRequired()
+                .HasColumnType("VARCHAR(20)");
 
             builder.Property(p => p.Done)
-                    .IsRequired()
-                    .HasColumnType("TINYINT(1)");
+                .IsRequired()
+                .HasColumnType("TINYINT(1)");
 
             builder.Property(p => p.Date)
-                    .IsRequired()
-                    .HasColumnType("DATETIME");
+                .IsRequired()
+                .HasColumnType("DATETIME");
 
             builder.Property(p => p.User)
-                    .IsRequired()
-                    .HasColumnType("VARCHAR(100)");
+                .IsRequired()
+                .HasColumnType("VARCHAR(100)");
+
+            builder.HasIndex(p => p.User)
+                .HasName("USER_INDEX");
 
             builder.HasKey(p => p.Id);
 
