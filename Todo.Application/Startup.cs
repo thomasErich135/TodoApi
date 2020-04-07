@@ -1,4 +1,6 @@
+using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -46,10 +48,12 @@ namespace Todo.Application
             //Swagger using
             app.UseSwaggerSetup();
 
+            // //HealthCheck using
+            app.UseHealthCheckSetup();
+
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
+            
             //app.UseAuthentication();
             //app.UseAuthorization();
 
@@ -58,11 +62,9 @@ namespace Todo.Application
                             .AllowAnyMethod()
                             .AllowAnyHeader());
 
-            // //HealthCheck using
-            app.UseHealthCheckSetup();
-
+           
             app.UseEndpoints(endpoints =>
-            {
+            {   
                 endpoints.MapControllers();
             });
         }

@@ -3,7 +3,7 @@
   "profiles": {
     "Todo.Application": {
       "commandName": "Project",
-      "launchBrowser": true,
+      "launchBrowser": false,
       "launchUrl": "",
       "applicationUrl": "https://localhost:9002;http://localhost:9001",
       "environmentVariables": {
