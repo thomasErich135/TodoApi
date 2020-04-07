@@ -7,9 +7,9 @@ using Todo.Infrastructure.Mappings;
 
 namespace Todo.Infrastructure.Context
 {
-    public class MysqlContext : DbContext
+    public class ApplicationDbContext: DbContext
     {
-        public MysqlContext(DbContextOptions<MysqlContext> options) : base(options) { }
+        public ApplicationDbContext (DbContextOptions<ApplicationDbContext> options) : base(options) { }
         
         public DbSet<TodoItem> TodoItems { get; set; }
         

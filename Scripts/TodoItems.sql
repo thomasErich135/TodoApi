@@ -1,0 +1,8 @@
+CREATE TABLE `TodoApp`.`TodoItems` (
+  `IdTodo` CHAR(37) NOT NULL DEFAULT 'uuid()',
+  `Title` VARCHAR(45) NOT NULL,
+  `Done` TINYINT(1) NOT NULL DEFAULT 0,
+  `Date` DATE NOT NULL,
+  `User` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`IdTodo`),
+  INDEX `USER_INDEX` (`User` ASC));

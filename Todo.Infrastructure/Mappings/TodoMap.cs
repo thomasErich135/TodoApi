@@ -15,7 +15,7 @@ namespace Todo.Infrastructure.Mappings
             
             builder.Property(p => p.Title)
                 .IsRequired()
-                .HasColumnType("VARCHAR(20)");
+                .HasColumnType("VARCHAR(45)");
 
             builder.Property(p => p.Done)
                 .IsRequired()

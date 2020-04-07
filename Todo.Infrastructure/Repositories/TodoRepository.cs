@@ -10,7 +10,7 @@ namespace Todo.Infrastructure.Repositories
 {
     public class TodoRepository : Repository<TodoItem>, ITodoRepository
     {
-        public TodoRepository(MysqlContext context) : base(context)
+        public TodoRepository(ApplicationDbContext context) : base(context)
         {
         }
 

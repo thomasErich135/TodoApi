@@ -14,12 +14,12 @@ namespace Todo.Application.Configurations
         public static IServiceCollection AddDatabaseSetup(this IServiceCollection services, IConfiguration configuration)
         {
 
-            services.AddDbContext<MysqlContext>(options =>
-                options.UseInMemoryDatabase("Database"));
+            // services.AddDbContext<MysqlContext>(options =>
+            //     options.UseInMemoryDatabase("Database"));
             
             //Add Mysql connection
-            // services.AddDbContext<MysqlContext>(options =>
-            //     options.UseMySql(configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseMySql(configuration.GetConnectionString("DefaultConnection")));
 
             return services;
         }
