@@ -54,8 +54,8 @@ namespace Todo.Application
             app.UseHttpsRedirection();
             app.UseRouting();
             
-            //app.UseAuthentication();
-            //app.UseAuthorization();
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseCors(x => x
                             .AllowAnyOrigin()

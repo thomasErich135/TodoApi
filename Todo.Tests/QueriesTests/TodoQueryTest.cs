@@ -33,26 +33,31 @@ namespace Todo.Tests.QueriesTests
 
         [TestMethod]
         public void GetAllDone()
-        {
+        {   
+            _items[0].MarkAsDone();
             var result = _items.AsQueryable().Where(TodoQueries.GetAllDone("teste@teste.com"));
-            Assert.AreEqual(0,result.Count());
+            Assert.AreEqual(1,result.Count());
         }
 
         [TestMethod]
         public void GetAllUndone()
         {
+            _items[0].MarkAsDone();
+
             var result = _items.AsQueryable().Where(TodoQueries.GetAllUndone("teste@teste.com"));
-            Assert.AreEqual(2,result.Count());
+            Assert.AreEqual(1,result.Count());
         }
 
         [TestMethod]
         public void GetAllByDate()
         {
+            _items[0].MarkAsDone();
+            
             var result = _items.AsQueryable().Where(TodoQueries.GetAllByPeriod("teste@teste.com",true,DateTime.Now));
-            Assert.AreEqual(0,result.Count());
+            Assert.AreEqual(1,result.Count());
 
             result = _items.AsQueryable().Where(TodoQueries.GetAllByPeriod("teste@teste.com",false,DateTime.Now));
-            Assert.AreEqual(2,result.Count());
+            Assert.AreEqual(1,result.Count());
         }
     }
 }
