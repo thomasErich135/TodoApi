@@ -1,6 +1,6 @@
 {
   "Todo.Domain.dll": {
-    "C:\\Users\\mmartiol\\Sandbox\\Todo\\TodoApi\\Todo.Domain\\Queries\\TodoQueries.cs": {
+    "D:\\Sandbox\\TodoApi\\Todo.Domain\\Queries\\TodoQueries.cs": {
       "Todo.Domain.Queries.TodoQueries": {
         "System.Linq.Expressions.Expression`1<System.Func`2<Todo.Domain.Entities.TodoItem,System.Boolean>> Todo.Domain.Queries.TodoQueries::GetAll(System.String)": {
           "Lines": {
@@ -38,7 +38,7 @@
         }
       }
     },
-    "C:\\Users\\mmartiol\\Sandbox\\Todo\\TodoApi\\Todo.Domain\\Handlers\\TodoHandler.cs": {
+    "D:\\Sandbox\\TodoApi\\Todo.Domain\\Handlers\\TodoHandler.cs": {
       "Todo.Domain.Handlers.TodoHandler": {
         "Todo.Domain.Commands.Contracts.ICommandResult Todo.Domain.Handlers.TodoHandler::Handle(Todo.Domain.Commands.CreateTodoCommand)": {
           "Lines": {
@@ -198,7 +198,7 @@
         }
       }
     },
-    "C:\\Users\\mmartiol\\Sandbox\\Todo\\TodoApi\\Todo.Domain\\Entities\\Entity.cs": {
+    "D:\\Sandbox\\TodoApi\\Todo.Domain\\Entities\\Entity.cs": {
       "Todo.Domain.Entities.Entity": {
         "System.Guid Todo.Domain.Entities.Entity::get_Id()": {
           "Lines": {
@@ -225,7 +225,7 @@
         }
       }
     },
-    "C:\\Users\\mmartiol\\Sandbox\\Todo\\TodoApi\\Todo.Domain\\Entities\\TodoItem.cs": {
+    "D:\\Sandbox\\TodoApi\\Todo.Domain\\Entities\\TodoItem.cs": {
       "Todo.Domain.Entities.TodoItem": {
         "System.String Todo.Domain.Entities.TodoItem::get_Title()": {
           "Lines": {
@@ -289,7 +289,7 @@
         }
       }
     },
-    "C:\\Users\\mmartiol\\Sandbox\\Todo\\TodoApi\\Todo.Domain\\Commands\\CreateTodoCommand.cs": {
+    "D:\\Sandbox\\TodoApi\\Todo.Domain\\Commands\\CreateTodoCommand.cs": {
       "Todo.Domain.Commands.CreateTodoCommand": {
         "System.String Todo.Domain.Commands.CreateTodoCommand::get_Title()": {
           "Lines": {
@@ -343,7 +343,7 @@
         }
       }
     },
-    "C:\\Users\\mmartiol\\Sandbox\\Todo\\TodoApi\\Todo.Domain\\Commands\\GenericCommandResult.cs": {
+    "D:\\Sandbox\\TodoApi\\Todo.Domain\\Commands\\GenericCommandResult.cs": {
       "Todo.Domain.Commands.GenericCommandResult": {
         "System.Boolean Todo.Domain.Commands.GenericCommandResult::get_Success()": {
           "Lines": {
@@ -382,7 +382,7 @@
         }
       }
     },
-    "C:\\Users\\mmartiol\\Sandbox\\Todo\\TodoApi\\Todo.Domain\\Commands\\MarkTodoAsDoneCommand.cs": {
+    "D:\\Sandbox\\TodoApi\\Todo.Domain\\Commands\\MarkTodoAsDoneCommand.cs": {
       "Todo.Domain.Commands.MarkTodoAsDoneCommand": {
         "System.Guid Todo.Domain.Commands.MarkTodoAsDoneCommand::get_Id()": {
           "Lines": {
@@ -427,7 +427,7 @@
         }
       }
     },
-    "C:\\Users\\mmartiol\\Sandbox\\Todo\\TodoApi\\Todo.Domain\\Commands\\MarkTodoAsUndoneCommand.cs": {
+    "D:\\Sandbox\\TodoApi\\Todo.Domain\\Commands\\MarkTodoAsUndoneCommand.cs": {
       "Todo.Domain.Commands.MarkTodoAsUndoneCommand": {
         "System.Guid Todo.Domain.Commands.MarkTodoAsUndoneCommand::get_Id()": {
           "Lines": {
@@ -472,7 +472,7 @@
         }
       }
     },
-    "C:\\Users\\mmartiol\\Sandbox\\Todo\\TodoApi\\Todo.Domain\\Commands\\UpdateTodoCommand.cs": {
+    "D:\\Sandbox\\TodoApi\\Todo.Domain\\Commands\\UpdateTodoCommand.cs": {
       "Todo.Domain.Commands.UpdateTodoCommand": {
         "System.Guid Todo.Domain.Commands.UpdateTodoCommand::get_Id()": {
           "Lines": {

@@ -1,0 +1,361 @@
+SF:D:\Sandbox\TodoApi\Todo.Domain\Queries\TodoQueries.cs
+FN:9,System.Linq.Expressions.Expression`1<System.Func`2<Todo.Domain.Entities.TodoItem,System.Boolean>> Todo.Domain.Queries.TodoQueries::GetAll(System.String)
+FNDA:2,System.Linq.Expressions.Expression`1<System.Func`2<Todo.Domain.Entities.TodoItem,System.Boolean>> Todo.Domain.Queries.TodoQueries::GetAll(System.String)
+DA:10,2
+DA:11,2
+DA:12,2
+FN:14,System.Linq.Expressions.Expression`1<System.Func`2<Todo.Domain.Entities.TodoItem,System.Boolean>> Todo.Domain.Queries.TodoQueries::GetAllDone(System.String)
+FNDA:1,System.Linq.Expressions.Expression`1<System.Func`2<Todo.Domain.Entities.TodoItem,System.Boolean>> Todo.Domain.Queries.TodoQueries::GetAllDone(System.String)
+DA:15,1
+DA:16,1
+DA:17,1
+FN:19,System.Linq.Expressions.Expression`1<System.Func`2<Todo.Domain.Entities.TodoItem,System.Boolean>> Todo.Domain.Queries.TodoQueries::GetAllUndone(System.String)
+FNDA:1,System.Linq.Expressions.Expression`1<System.Func`2<Todo.Domain.Entities.TodoItem,System.Boolean>> Todo.Domain.Queries.TodoQueries::GetAllUndone(System.String)
+DA:20,1
+DA:21,1
+DA:22,1
+FN:24,System.Linq.Expressions.Expression`1<System.Func`2<Todo.Domain.Entities.TodoItem,System.Boolean>> Todo.Domain.Queries.TodoQueries::GetAllByPeriod(System.String,System.Boolean,System.DateTime)
+FNDA:2,System.Linq.Expressions.Expression`1<System.Func`2<Todo.Domain.Entities.TodoItem,System.Boolean>> Todo.Domain.Queries.TodoQueries::GetAllByPeriod(System.String,System.Boolean,System.DateTime)
+DA:25,2
+DA:26,2
+DA:27,2
+DA:28,2
+DA:29,2
+LF:14
+LH:14
+BRF:0
+BRH:0
+FNF:4
+FNH:4
+end_of_record
+SF:D:\Sandbox\TodoApi\Todo.Domain\Handlers\TodoHandler.cs
+FN:27,Todo.Domain.Commands.Contracts.ICommandResult Todo.Domain.Handlers.TodoHandler::Handle(Todo.Domain.Commands.CreateTodoCommand)
+FNDA:2,Todo.Domain.Commands.Contracts.ICommandResult Todo.Domain.Handlers.TodoHandler::Handle(Todo.Domain.Commands.CreateTodoCommand)
+DA:28,2
+DA:30,2
+DA:31,2
+DA:32,1
+DA:33,1
+DA:34,1
+DA:35,1
+DA:38,1
+DA:41,1
+DA:43,1
+DA:44,1
+DA:45,1
+DA:46,1
+DA:47,2
+BRDA:31,16,0,1
+BRDA:31,16,1,1
+FN:49,Todo.Domain.Commands.Contracts.ICommandResult Todo.Domain.Handlers.TodoHandler::Handle(Todo.Domain.Commands.UpdateTodoCommand)
+FNDA:0,Todo.Domain.Commands.Contracts.ICommandResult Todo.Domain.Handlers.TodoHandler::Handle(Todo.Domain.Commands.UpdateTodoCommand)
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:58,0
+DA:60,0
+DA:62,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:69,0
+BRDA:52,16,0,0
+BRDA:52,16,1,0
+FN:71,Todo.Domain.Commands.Contracts.ICommandResult Todo.Domain.Handlers.TodoHandler::Handle(Todo.Domain.Commands.MarkTodoAsDoneCommand)
+FNDA:0,Todo.Domain.Commands.Contracts.ICommandResult Todo.Domain.Handlers.TodoHandler::Handle(Todo.Domain.Commands.MarkTodoAsDoneCommand)
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:80,0
+DA:82,0
+DA:84,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:91,0
+BRDA:74,16,0,0
+BRDA:74,16,1,0
+FN:93,Todo.Domain.Commands.Contracts.ICommandResult Todo.Domain.Handlers.TodoHandler::Handle(Todo.Domain.Commands.MarkTodoAsUndoneCommand)
+FNDA:0,Todo.Domain.Commands.Contracts.ICommandResult Todo.Domain.Handlers.TodoHandler::Handle(Todo.Domain.Commands.MarkTodoAsUndoneCommand)
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:102,0
+DA:104,0
+DA:106,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+BRDA:96,16,0,0
+BRDA:96,16,1,0
+FN:21,System.Void Todo.Domain.Handlers.TodoHandler::.ctor(Todo.Domain.Repositories.ITodoRepository)
+FNDA:2,System.Void Todo.Domain.Handlers.TodoHandler::.ctor(Todo.Domain.Repositories.ITodoRepository)
+DA:22,2
+DA:23,2
+DA:24,2
+DA:25,2
+LF:63
+LH:18
+BRF:8
+BRH:2
+FNF:5
+FNH:2
+end_of_record
+SF:D:\Sandbox\TodoApi\Todo.Domain\Entities\Entity.cs
+FN:14,System.Guid Todo.Domain.Entities.Entity::get_Id()
+FNDA:0,System.Guid Todo.Domain.Entities.Entity::get_Id()
+DA:15,0
+FN:17,System.Boolean Todo.Domain.Entities.Entity::Equals(Todo.Domain.Entities.Entity)
+FNDA:0,System.Boolean Todo.Domain.Entities.Entity::Equals(Todo.Domain.Entities.Entity)
+DA:18,0
+DA:19,0
+DA:20,0
+FN:9,System.Void Todo.Domain.Entities.Entity::.ctor()
+FNDA:17,System.Void Todo.Domain.Entities.Entity::.ctor()
+DA:10,17
+DA:11,17
+DA:12,17
+DA:13,17
+LF:8
+LH:4
+BRF:0
+BRH:0
+FNF:3
+FNH:1
+end_of_record
+SF:D:\Sandbox\TodoApi\Todo.Domain\Entities\TodoItem.cs
+FN:16,System.String Todo.Domain.Entities.TodoItem::get_Title()
+FNDA:0,System.String Todo.Domain.Entities.TodoItem::get_Title()
+DA:17,0
+FN:17,System.Boolean Todo.Domain.Entities.TodoItem::get_Done()
+FNDA:28,System.Boolean Todo.Domain.Entities.TodoItem::get_Done()
+DA:18,28
+FN:18,System.DateTime Todo.Domain.Entities.TodoItem::get_Date()
+FNDA:19,System.DateTime Todo.Domain.Entities.TodoItem::get_Date()
+DA:19,19
+FN:19,System.String Todo.Domain.Entities.TodoItem::get_User()
+FNDA:41,System.String Todo.Domain.Entities.TodoItem::get_User()
+DA:20,41
+FN:22,System.Void Todo.Domain.Entities.TodoItem::MarkAsDone()
+FNDA:3,System.Void Todo.Domain.Entities.TodoItem::MarkAsDone()
+DA:23,3
+DA:24,3
+DA:25,3
+FN:27,System.Void Todo.Domain.Entities.TodoItem::MarkAsUndone()
+FNDA:0,System.Void Todo.Domain.Entities.TodoItem::MarkAsUndone()
+DA:28,0
+DA:29,0
+DA:30,0
+FN:32,System.Void Todo.Domain.Entities.TodoItem::UpdateTitle(System.String)
+FNDA:0,System.Void Todo.Domain.Entities.TodoItem::UpdateTitle(System.String)
+DA:33,0
+DA:34,0
+DA:35,0
+FN:8,System.Void Todo.Domain.Entities.TodoItem::.ctor(System.String,System.DateTime,System.String)
+FNDA:17,System.Void Todo.Domain.Entities.TodoItem::.ctor(System.String,System.DateTime,System.String)
+DA:9,17
+DA:10,17
+DA:11,17
+DA:12,17
+DA:13,17
+DA:14,17
+DA:15,17
+LF:20
+LH:13
+BRF:0
+BRH:0
+FNF:8
+FNH:5
+end_of_record
+SF:D:\Sandbox\TodoApi\Todo.Domain\Commands\CreateTodoCommand.cs
+FN:22,System.String Todo.Domain.Commands.CreateTodoCommand::get_Title()
+FNDA:15,System.String Todo.Domain.Commands.CreateTodoCommand::get_Title()
+DA:23,15
+FN:23,System.String Todo.Domain.Commands.CreateTodoCommand::get_User()
+FNDA:15,System.String Todo.Domain.Commands.CreateTodoCommand::get_User()
+DA:24,15
+FN:24,System.DateTime Todo.Domain.Commands.CreateTodoCommand::get_Date()
+FNDA:9,System.DateTime Todo.Domain.Commands.CreateTodoCommand::get_Date()
+DA:25,9
+FN:27,System.Void Todo.Domain.Commands.CreateTodoCommand::Validate()
+FNDA:6,System.Void Todo.Domain.Commands.CreateTodoCommand::Validate()
+DA:28,6
+DA:29,6
+DA:30,6
+DA:31,6
+DA:32,6
+DA:33,6
+DA:34,6
+DA:35,6
+FN:11,System.Void Todo.Domain.Commands.CreateTodoCommand::.ctor()
+FNDA:0,System.Void Todo.Domain.Commands.CreateTodoCommand::.ctor()
+DA:12,0
+DA:13,0
+DA:14,0
+FN:15,System.Void Todo.Domain.Commands.CreateTodoCommand::.ctor(System.String,System.String,System.DateTime)
+FNDA:8,System.Void Todo.Domain.Commands.CreateTodoCommand::.ctor(System.String,System.String,System.DateTime)
+DA:16,8
+DA:17,8
+DA:18,8
+DA:19,8
+DA:20,8
+DA:21,8
+LF:20
+LH:17
+BRF:0
+BRH:0
+FNF:6
+FNH:5
+end_of_record
+SF:D:\Sandbox\TodoApi\Todo.Domain\Commands\GenericCommandResult.cs
+FN:17,System.Boolean Todo.Domain.Commands.GenericCommandResult::get_Success()
+FNDA:4,System.Boolean Todo.Domain.Commands.GenericCommandResult::get_Success()
+DA:18,4
+FN:18,System.String Todo.Domain.Commands.GenericCommandResult::get_Message()
+FNDA:0,System.String Todo.Domain.Commands.GenericCommandResult::get_Message()
+DA:19,0
+FN:19,System.Object Todo.Domain.Commands.GenericCommandResult::get_Data()
+FNDA:0,System.Object Todo.Domain.Commands.GenericCommandResult::get_Data()
+DA:20,0
+FN:9,System.Void Todo.Domain.Commands.GenericCommandResult::.ctor()
+FNDA:0,System.Void Todo.Domain.Commands.GenericCommandResult::.ctor()
+DA:10,0
+FN:10,System.Void Todo.Domain.Commands.GenericCommandResult::.ctor(System.Boolean,System.String,System.Object)
+FNDA:2,System.Void Todo.Domain.Commands.GenericCommandResult::.ctor(System.Boolean,System.String,System.Object)
+DA:11,2
+DA:12,2
+DA:13,2
+DA:14,2
+DA:15,2
+DA:16,2
+LF:10
+LH:7
+BRF:0
+BRH:0
+FNF:5
+FNH:2
+end_of_record
+SF:D:\Sandbox\TodoApi\Todo.Domain\Commands\MarkTodoAsDoneCommand.cs
+FN:16,System.Guid Todo.Domain.Commands.MarkTodoAsDoneCommand::get_Id()
+FNDA:6,System.Guid Todo.Domain.Commands.MarkTodoAsDoneCommand::get_Id()
+DA:17,6
+FN:17,System.String Todo.Domain.Commands.MarkTodoAsDoneCommand::get_User()
+FNDA:6,System.String Todo.Domain.Commands.MarkTodoAsDoneCommand::get_User()
+DA:18,6
+FN:19,System.Void Todo.Domain.Commands.MarkTodoAsDoneCommand::Validate()
+FNDA:2,System.Void Todo.Domain.Commands.MarkTodoAsDoneCommand::Validate()
+DA:20,2
+DA:21,2
+DA:22,2
+DA:23,2
+DA:24,2
+DA:25,2
+DA:26,2
+DA:27,2
+FN:9,System.Void Todo.Domain.Commands.MarkTodoAsDoneCommand::.ctor()
+FNDA:0,System.Void Todo.Domain.Commands.MarkTodoAsDoneCommand::.ctor()
+DA:10,0
+FN:10,System.Void Todo.Domain.Commands.MarkTodoAsDoneCommand::.ctor(System.Guid,System.String)
+FNDA:4,System.Void Todo.Domain.Commands.MarkTodoAsDoneCommand::.ctor(System.Guid,System.String)
+DA:11,4
+DA:12,4
+DA:13,4
+DA:14,4
+DA:15,4
+LF:16
+LH:15
+BRF:0
+BRH:0
+FNF:5
+FNH:4
+end_of_record
+SF:D:\Sandbox\TodoApi\Todo.Domain\Commands\MarkTodoAsUndoneCommand.cs
+FN:18,System.Guid Todo.Domain.Commands.MarkTodoAsUndoneCommand::get_Id()
+FNDA:6,System.Guid Todo.Domain.Commands.MarkTodoAsUndoneCommand::get_Id()
+DA:19,6
+FN:19,System.String Todo.Domain.Commands.MarkTodoAsUndoneCommand::get_User()
+FNDA:6,System.String Todo.Domain.Commands.MarkTodoAsUndoneCommand::get_User()
+DA:20,6
+FN:22,System.Void Todo.Domain.Commands.MarkTodoAsUndoneCommand::Validate()
+FNDA:2,System.Void Todo.Domain.Commands.MarkTodoAsUndoneCommand::Validate()
+DA:23,2
+DA:24,2
+DA:25,2
+DA:26,2
+DA:27,2
+DA:28,2
+DA:29,2
+DA:30,2
+FN:11,System.Void Todo.Domain.Commands.MarkTodoAsUndoneCommand::.ctor()
+FNDA:0,System.Void Todo.Domain.Commands.MarkTodoAsUndoneCommand::.ctor()
+DA:12,0
+FN:12,System.Void Todo.Domain.Commands.MarkTodoAsUndoneCommand::.ctor(System.Guid,System.String)
+FNDA:4,System.Void Todo.Domain.Commands.MarkTodoAsUndoneCommand::.ctor(System.Guid,System.String)
+DA:13,4
+DA:14,4
+DA:15,4
+DA:16,4
+DA:17,4
+LF:16
+LH:15
+BRF:0
+BRH:0
+FNF:5
+FNH:4
+end_of_record
+SF:D:\Sandbox\TodoApi\Todo.Domain\Commands\UpdateTodoCommand.cs
+FN:23,System.Guid Todo.Domain.Commands.UpdateTodoCommand::get_Id()
+FNDA:0,System.Guid Todo.Domain.Commands.UpdateTodoCommand::get_Id()
+DA:24,0
+FN:24,System.String Todo.Domain.Commands.UpdateTodoCommand::get_Title()
+FNDA:6,System.String Todo.Domain.Commands.UpdateTodoCommand::get_Title()
+DA:25,6
+FN:25,System.String Todo.Domain.Commands.UpdateTodoCommand::get_User()
+FNDA:6,System.String Todo.Domain.Commands.UpdateTodoCommand::get_User()
+DA:26,6
+FN:28,System.Void Todo.Domain.Commands.UpdateTodoCommand::Validate()
+FNDA:2,System.Void Todo.Domain.Commands.UpdateTodoCommand::Validate()
+DA:29,2
+DA:30,2
+DA:31,2
+DA:32,2
+DA:33,2
+DA:34,2
+DA:35,2
+DA:36,2
+FN:12,System.Void Todo.Domain.Commands.UpdateTodoCommand::.ctor()
+FNDA:0,System.Void Todo.Domain.Commands.UpdateTodoCommand::.ctor()
+DA:13,0
+DA:14,0
+DA:15,0
+FN:16,System.Void Todo.Domain.Commands.UpdateTodoCommand::.ctor(System.Guid,System.String,System.String)
+FNDA:4,System.Void Todo.Domain.Commands.UpdateTodoCommand::.ctor(System.Guid,System.String,System.String)
+DA:17,4
+DA:18,4
+DA:19,4
+DA:20,4
+DA:21,4
+DA:22,4
+LF:20
+LH:16
+BRF:0
+BRH:0
+FNF:6
+FNH:4
+end_of_record

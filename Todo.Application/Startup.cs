@@ -1,10 +1,12 @@
 using HealthChecks.UI.Client;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using Todo.Application.Configurations;
 
 namespace Todo.Application
@@ -30,6 +32,21 @@ namespace Todo.Application
 
             //Swagger Setup
             services.AddSwaggerSetup();
+
+            services
+               .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+               .AddJwtBearer(options =>
+               {
+                   options.Authority = "https://securetoken.google.com/todoapp-2883c";
+                   options.TokenValidationParameters = new TokenValidationParameters
+                   {
+                       ValidateIssuer = true,
+                       ValidIssuer = "https://securetoken.google.com/todoapp-2883c",
+                       ValidateAudience = true,
+                       ValidAudience = "todoapp-2883c",
+                       ValidateLifetime = true
+                   };
+               });
 
             //HealthCheck Setup
             services.AddHealthCheckSetup(Configuration);

@@ -8,7 +8,7 @@ using Todo.Domain.Repositories;
 namespace Todo.Application.Controllers
 {
     [ApiController]
-    [AllowAnonymous]
+    [Authorize]
     [Route("v1/todos")]
     public class TodoController : Controller
     {
@@ -66,8 +66,7 @@ namespace Todo.Application.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
-        //TODO:Lista tarefas não feitas
+        //Lista tarefas não feitas
         [Route("get-all-undone")]
         [HttpGet]
         public IActionResult GetAllUndone()
